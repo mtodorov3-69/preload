@@ -1,0 +1,8 @@
+argument_list.o: argument_list.cc mmap-preload.h argument_list.h \
+ mapped_file.h my_aux.h
+mapped_file.o: mapped_file.cc mmap-preload.h argument_list.h \
+ mapped_file.h
+memfree.o: memfree.cc my_aux.h
+mmap-preload.o: mmap-preload.cc mmap-preload.h argument_list.h \
+ mapped_file.h signal_handling.h my_aux.h
+signal_handling.o: signal_handling.cc mmap-preload.h signal_handling.h
